@@ -33,7 +33,7 @@ auth_query_parameters = {
 @app.route('/')
 def homepage():
     if session.get('user'):
-        return render_template('index.html')
+        return render_template('cassette.html')
     else:
         return render_template('index.html')
 
