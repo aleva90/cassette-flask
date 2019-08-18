@@ -29,11 +29,28 @@ auth_query_parameters = {
     'scope': SCOPE
 }
 
+spAuth = spotipy.oauth2.SpotifyOAuth(
+    CLIENT_ID, CLIENT_SECRET, REDIRECT_URI, scope=SCOPE)
+
 
 @app.route('/')
 def homepage():
     if session.get('user'):
-        return render_template('cassette.html')
+        if spAuth._is_token_expired(session.get('user')):
+            session.pop('user', None)
+            return redirect('/')
+
+        sp = spotipy.Spotify(auth=session.get('user')['access_token'])
+        results = sp.current_user_top_tracks(limit=5, time_range='medium_term')
+        top_songs = [[res['name'][:20], res['artists'][0]['name'][:20]]
+                     for res in results['items']]
+        user_info = sp.current_user()
+        data = {
+            'top_songs': top_songs,
+            'name': user_info['display_name'].split(' ')[0],
+            'followers': user_info['followers']['total'],
+        }
+        return render_template('cassette.html', **data)
     else:
         return render_template('index.html')
 
@@ -50,10 +67,8 @@ def login_spotify():
 def callback():
     code = request.args['code']
     if code:
-        spAuth = spotipy.oauth2.SpotifyOAuth(
-            CLIENT_ID, CLIENT_SECRET, REDIRECT_URI, scope=SCOPE)
         token = spAuth.get_access_token(code)
-        session['user'] = token['access_token']
+        session['user'] = token
         return redirect('/')
 
 
