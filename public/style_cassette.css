@@ -31,7 +31,7 @@
   .cassetteOuter {
     position: relative;
     margin: 0em auto;
-    background: #950740;
+    background: #1DB954;
     border-radius: .7em;
     width: 20em;
     height: 12em;
@@ -148,7 +148,7 @@
   .stickerOuter {
     width: 100%;
     height: 8em;
-    background: #950740;
+    background: #1DB954;
     border-radius: .7em;
     border-top: #a2a2a2 solid 0.1em;
     border-bottom: #d5d5d5 solid 0.1em;
@@ -191,7 +191,7 @@
     position: absolute;
     top: 40%;
     width: 100%;
-    border-top: #c3073f solid 0.3em;
+    border-top: #137736 solid 0.3em;
     border-bottom: #1a1a1d solid 0.3em;
   }
   .sticker .c90 {
@@ -212,12 +212,12 @@
     position: relative;
     width: 60%;
     margin: .5em auto 0;
-    background: #950740;
+    background: #1DB954;
     padding: .2em;
     border-radius: .4em;
     border-top: #d5d5d5 solid 0.1em;
     border-bottom: #959595 solid 0.1em;
-    box-shadow: #950740 0 0 0 0.5em, #888888 0 -1px 0 0.5em;
+    box-shadow: #1DB954 0 0 0 0.5em, #888888 0 -1px 0 0.5em;
   }
   
   .circle {
@@ -230,7 +230,7 @@
     background: #4e4e50;
     border-top: #a2a2a2 solid 0.1em;
     border-bottom: #e1e1e1 solid 0.1em;
-    box-shadow: inset #950740 0 0 0 0.2em, inset #959595 0 0.1em 0 0.2em, inset #efeeeb 0 0.1em 0 0.4em, inset #b6b2a4 0 0.2em 0 0.4em, inset #1a1a1d -0.7em 1.5em 0 0;
+    box-shadow: inset #1DB954 0 0 0 0.2em, inset #959595 0 0.1em 0 0.2em, inset #efeeeb 0 0.1em 0 0.4em, inset #b6b2a4 0 0.2em 0 0.4em, inset #1a1a1d -0.7em 1.5em 0 0;
   }
   .circle.two {
     float: right;
@@ -284,7 +284,7 @@
     background: #1a1a1d;
     border-top: #a2a2a2 solid 0.1em;
     border-bottom: #e1e1e1 solid 0.1em;
-    box-shadow: inset #959595 0 0.2em 0 0, #950740 0 0 0 0.25em, #959595 0 -0.1em 0 0.2em, #e1e1e1 0 0.1em 0 0.2em;
+    box-shadow: inset #959595 0 0.2em 0 0, #1DB954 0 0 0 0.25em, #959595 0 -0.1em 0 0.2em, #e1e1e1 0 0.1em 0 0.2em;
   }
   .window .reelOne {
     position: absolute;
@@ -295,7 +295,7 @@
     margin-top: -4.5em;
     width: 9em;
     height: 9em;
-    background: #4d3b3b;
+    background: #b91d82;
     border-radius: 50%;
     transition: width,height,margin;
     transition-duration: 1s;
@@ -322,7 +322,7 @@
     margin-top: -3em;
     width: 6em;
     height: 6em;
-    background: #4d3b3b;
+    background: #b91d82;
     border-radius: 50%;
     transition: width,height,margin;
     transition-duration: 1s;
@@ -448,7 +448,7 @@
     width: 2em;
     height: .6em;
     background: #626262;
-    box-shadow: inset #4d3b3b 0 0.3em 0 0, inset #7b7b7b 0 -0.1em 0 0;
+    box-shadow: inset #b91d82 0 0.3em 0 0, inset #7b7b7b 0 -0.1em 0 0;
   }
   .bottomHoles.one {
     left: .5em;
@@ -466,7 +466,7 @@
     width: .4em;
     height: .4em;
     background: #626262;
-    box-shadow: inset #4d3b3b 0 0.2em 0 0, inset #7b7b7b 0 -0.05em 0 0;
+    box-shadow: inset #b91d82 0 0.2em 0 0, inset #7b7b7b 0 -0.05em 0 0;
   }
   .bottomHoles.two:after {
     content: '';
@@ -477,7 +477,7 @@
     width: .4em;
     height: .4em;
     background: #626262;
-    box-shadow: inset #4d3b3b 0 0.2em 0 0, inset #7b7b7b 0 -0.05em 0 0;
+    box-shadow: inset #b91d82 0 0.2em 0 0, inset #7b7b7b 0 -0.05em 0 0;
   }
   .bottomHoles.three {
     right: .5em;
@@ -512,7 +512,7 @@
     position: relative;
     left: .3em;
     height: 3em;
-    background: #f8f1e1;
+    background: #eabbd9;
     padding: .4em;
   }
   .linerNotesTop .boxDesc {
@@ -550,7 +550,7 @@
     line-height: 1rem;
     font-size: .8em;
     background: #1a1a1d;
-    color: #f8f1e1;
+    color: #eabbd9;
     font-weight: 900;
     padding-top: .7em;
   }
@@ -582,18 +582,18 @@
     position: relative;
     left: .3em;
     height: 3em;
-    background: #c3073f;
+    background: #137736;
     border-top: #1a1a1d solid 0.8em;
     border-bottom: #1a1a1d solid 0.8em;
     text-align: center;
     font-weight: 900;
     line-height: 1em;
-    box-shadow: inset #950740 0 0.3em 0 0, inset #950740 0 -0.3em 0 0, inset #6f2232 0 -0.7em 0 0, #1a1a1d 0.6em -1em 0 0.2em;
+    box-shadow: inset #1DB954 0 0.3em 0 0, inset #1DB954 0 -0.3em 0 0, inset #eef1ec 0 -0.7em 0 0, #1a1a1d 0.6em -1em 0 0.2em;
     padding-top: .3em;
   }
   .linerNotesSpine .spineTitle {
     display: block;
-    background: #950740;
+    background: #1DB954;
     width: 8em;
     margin: 0 auto;
   }
@@ -613,7 +613,7 @@
   .linerNotesMainContent {
     position: relative;
     height: 10em;
-    background: #f8f1e1;
+    background: #eabbd9;
     box-shadow: #1a1a1d -1em 1em 0 0;
     z-index: 1;
   }
@@ -632,7 +632,7 @@
     top: 0;
     right: 0;
     width: 20.5em;
-    border-top: #eedeb8 solid 2em;
+    border-top: #dc8ec0 solid 2em;
     border-right: transparent solid .5em;
   }
   .linerNotesMainContent .side {
@@ -665,8 +665,8 @@
     position: relative;
     z-index: 2;
     height: 12em;
-    background: #f8f1e1;
-    box-shadow: inset #6f2232 0 1.5em 0 0, inset #6f2232 0 -1.5em 0 0, inset #c3073f 0 3em 0 0, inset #c3073f 0 -3em 0 0, inset #1a1a1d 0 4.5em 0 0, inset #1a1a1d 0 -4.5em 0 0, #1a1a1d 1em -1em 0 0;
+    background: #eabbd9;
+    box-shadow: inset #eabbd9 0 1.5em 0 0, inset #dc8ec0 0 -1.5em 0 0, inset #137736 0 3em 0 0, inset #137736 0 -3em 0 0, inset #1a1a1d 0 4.5em 0 0, inset #1a1a1d 0 -4.5em 0 0, #1a1a1d 1em -1em 0 0;
     padding-top: 1.5em;
     text-align: center;
   }
