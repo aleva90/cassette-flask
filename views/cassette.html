@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Spotify Cassette</title>
+    <meta name="description" content="A cool thing made with love and flask">
+    <link id="favicon" rel="icon" href="https://gomix.com/favicon-app.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock+Salt">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:900,400|Shadows+Into+Light"
+        type="text/css">
+    <link rel="stylesheet" href="/public/style_cassette.css">
+</head>
+
+<body>
+    <div class="cassetteOuter">
+        <span class="screw screw1"><span class="screwInner"></span></span>
+        <span class="screw screw2"><span class="screwInner"></span></span>
+        <span class="screw screw3"><span class="screwInner"></span></span>
+        <span class="screw screw4"><span class="screwInner"></span></span>
+        <div class="stickerOuter">
+            <div class="sticker">
+                <span class="a-side">A</span>
+                <p class="cursive">{{name}}'s Top</p>
+                <span class="stripe"></span>
+                <div class="middle clearfix">
+                    <span class="circle one">
+                        <span class="teethBox">
+                            <span class="teeth"></span>
+                            <span class="teeth"></span>
+                            <span class="teeth"></span>
+                        </span>
+                    </span>
+                    <div class="window">
+                        <span class="reelOne"></span>
+                        <span class="reelTwo"></span>
+                    </div>
+                    <span class="circle two">
+                        <span class="teethBox">
+                            <span class="teeth"></span>
+                            <span class="teeth"></span>
+                            <span class="teeth"></span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="cassetteBottom">
+            <span class="screw screw5"><span class="screwInner"></span></span>
+            <span class="bottomShadow">
+                <span class="bottomHoles one"></span>
+                <span class="bottomHoles two"></span>
+                <span class="bottomHoles three"></span>
+            </span>
+            <span class="holes one"></span>
+            <span class="holes two"></span>
+        </div>
+    </div>
+    <div class="linerNotes">
+        <div class="linerNotesTop clearfix">
+            <span class="boxDesc">{{name[:3]|upper}} D-C90 90min. @ 1-7/8 ips(2 × 45min.)</span>
+            <div class="infoBoxes clearfix">
+                <span class="box1">Tape Selector</span>
+                <span class="box2">Normal</span>
+                <span class="box3">Followers</br>{{followers}}</span>
+                <span class="boxCopyright">©2019 {{name[:3]|upper}} Random Co.,Ltd.</span>
+            </div>
+        </div>
+        <div class="linerNotesSpine"><span class="spineTitle">C-<span class="white">TAPE</span> {{name[:3]|upper}}</span></div>
+        <div class="linerNotesMainContent clearfix">
+            <span class="side">Artist:</span>
+            <span class="side">Song:</span>
+            <span class="space"></span>
+            {% if top_songs %}
+            {% for top_song in top_songs %}
+            <span class="song">{{top_song[1]}}</span><span class="song">{{top_song[0]}}</span>
+            {% endfor %}
+            {% else %}
+            <span class="song">No</span><span class="song">Songs :(</span>
+            {% endif %}
+        </div>
+        <div class="linerNotesBottom">
+            <p class="white">My Spotify Top Songs</p>
+            <p class="white">Precision Cassette Mechanism</p>
+            <p class="title">C-TAPE {{name[:3]|upper}}®</p>
+            <p class="white">High Noise Low Output</p>
+        </div>
+    </div>
+</body>
+
+</html>
